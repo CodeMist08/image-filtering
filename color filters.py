@@ -18,9 +18,9 @@ def apply_color_filter(image, filter_type):
             filtered_image[:, :, 1] = cv2.add(filtered_image[:,:,2], 50)
     elif filter_type == "decrease_blue" :
                 filtered_image[:, :, 0] = cv2.subtract(filtered_image[:,:,0], 50)
-                return filtered_image
+    return filtered_image
 
-image_path = r"C:\Users\manis\Desktop\codingal class\example.jpg" = 'background.jpg'
+image_path = r"C:\Users\manis\Desktop\codingal class\ 'background.jpg'
 image = cv2.imread(image_path)
 
 if image is None:
@@ -48,9 +48,9 @@ while True:
        elif key == ord('g'):
               filter_type = "green_tint"
        elif key == ord('i'):
-              filter_type = "increased_red"
+              filter_type = "increase_red"
        elif key == ord('d'):
-              filter_type = "decreased_blue"
+              filter_type = "decrease_blue"
        elif key == ord('q'):
               print("Exitting...")
               break
